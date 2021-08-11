@@ -1,0 +1,204 @@
+.PredictionPage {
+  background-color: var(--main-bg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 70%;
+  height: fit-content;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 2.2rem;
+  color: var(--primary-text);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.dash {
+  width: 15rem;
+  height: 0.5rem;
+  background-color: var(--secondary);
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.videoContainer {
+  width: fit-content;
+  height: 25rem;
+  margin-bottom: 2rem;
+}
+
+.body video {
+  height: 100%;
+  object-fit: cover;
+}
+
+.clearPadding {
+  padding: 0;
+  padding-top: 3rem;
+}
+
+.videoUploaderInput {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.videoUploaderInput p {
+  width: fit-content;
+  padding: 0.6rem 2rem;
+  height: fit-content;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.videoUploaderInput p:hover {
+  opacity: 0.8;
+}
+
+.videoUploaderInput p i {
+  margin-right: 0.35rem;
+}
+
+.videoUploaderInput input {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.predictBtnContainer {
+  margin-top: 2rem;
+  width: 90%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.predictBtn {
+  padding: 0.65rem 3rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--secondary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 1px solid var(--secondary-disabled);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.predictBtn:hover {
+  opacity: 0.8;
+}
+
+.predictingLoaderBody {
+  padding: 1rem 0;
+  padding-top: 3rem;
+}
+
+.predictingLoaderBody p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: var(--primary-text);
+}
+
+.predictionsPageBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 3rem;
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+}
+
+.predictionsPageBody p {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: var(--primary-text);
+  margin-bottom: 3rem;
+}
+
+.progressbar {
+  width: 90%;
+  margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-top: 4rem;
+    width: 90%;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .videoContainer {
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .body video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .clearPadding {
+    padding: 0;
+  }
+
+  .dash {
+    width: 5rem;
+  }
+
+  .videoUploaderInput p {
+    font-size: 1rem;
+    padding: 0.65rem 1.5rem;
+  }
+
+  .predictBtn {
+    width: 100%;
+  }
+}

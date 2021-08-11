@@ -1,0 +1,32 @@
+.svg {
+  /* transform: scale(0.8); */
+}
+
+.zeroAndGirl {
+  animation: zero 2s ease-in-out alternate infinite;
+}
+
+@keyframes zero {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.eye {
+  animation: eyes 2s ease-in-out alternate infinite;
+  transform-origin: bottom;
+}
+
+@keyframes eyes {
+  0% {
+    transform: rotate(0.5deg) translateY(1px);
+  }
+
+  100% {
+    transform: rotate(-2deg) translateY(1px);
+  }
+}

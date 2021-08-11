@@ -1,0 +1,14 @@
+.Layout {
+  width: 100%;
+  padding: 6rem 10rem 2rem 10rem;
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Layout.mobile {
+  width: 100vw;
+  padding: 4rem 1.5rem;
+  padding-top: 7rem;
+}

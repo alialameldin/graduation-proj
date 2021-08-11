@@ -1,0 +1,13 @@
+.SectionHeader {
+  font-size: 3rem;
+  color: var(--primary-text);
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767px) {
+  .SectionHeader {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,40 @@
+.OverviewCounter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.OverviewCounter:last-child {
+  margin-bottom: 0;
+}
+
+.counterParent {
+  display: flex;
+  align-items: flex-end;
+}
+
+.counterParent i {
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-0.75rem, -0.5rem);
+}
+
+.counterParent i.heartIcon {
+  color: red;
+}
+
+.sectionItemText {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: capitalize;
+}

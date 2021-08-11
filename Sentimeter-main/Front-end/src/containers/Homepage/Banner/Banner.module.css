@@ -1,0 +1,148 @@
+.Banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #f3f3f3;
+  z-index: 10;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(169, 209, 221, 0.2);
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% 15%, 0 95%);
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  column-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.container .header {
+  color: var(--secondary-disabled);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.container .header span {
+  color: var(--primary-text);
+  display: block;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.bannerImage {
+  width: 100%;
+  animation: bannerImage 3s alternate infinite ease-in-out;
+  animation-delay: 2s;
+}
+
+@keyframes bannerImage {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+  color: var(--primary-text);
+}
+
+.text p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--secondary);
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.startBtn {
+  margin-top: 2rem;
+  padding: 0.5rem 2.5rem;
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+  text-decoration: none;
+}
+
+.startBtn:hover {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.singleCircles1 {
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
+  top: 25%;
+  left: 85%;
+  width: 8%;
+  transform: rotateZ(30deg);
+}
+
+@media (max-width: 767px) {
+  .Banner {
+    height: fit-content;
+    padding: 5rem 0;
+    padding-top: 10rem;
+  }
+
+  .background {
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 65%);
+  }
+
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    row-gap: 5rem;
+  }
+
+  .text h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .btnContainer {
+    justify-content: center;
+  }
+
+  .singleCircles1 {
+    display: none;
+  }
+}

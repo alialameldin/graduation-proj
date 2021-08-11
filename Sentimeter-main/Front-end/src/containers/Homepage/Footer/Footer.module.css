@@ -1,0 +1,28 @@
+.Footer {
+  width: 100vw;
+  height: 4rem;
+  background: linear-gradient(to top, var(--primary), #092641);
+}
+
+.body {
+  width: 70%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.rights {
+  margin-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .body {
+    width: 90%;
+    font-size: 1rem;
+  }
+}

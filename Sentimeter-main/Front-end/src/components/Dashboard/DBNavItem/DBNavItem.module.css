@@ -1,0 +1,52 @@
+.DBNavItem {
+  display: flex;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  align-items: center;
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  outline: none;
+}
+
+.DBNavItem.selected {
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--primary-hover);
+}
+
+.DBNavItem:hover {
+  background-color: var(--primary-hover);
+}
+
+.DBNavItem i {
+  margin-right: 1rem;
+}
+
+.DBNavItem .notifications {
+  position: absolute;
+  right: 0.75rem;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.25rem 0.35rem;
+  font-size: 1rem;
+  animation: notif 1s alternate infinite linear;
+}
+
+@keyframes notif {
+  from {
+    background-color: #dd2323;
+    background-color: #ee3737;
+  }
+  to {
+    background-color: #ff0000;
+  }
+}

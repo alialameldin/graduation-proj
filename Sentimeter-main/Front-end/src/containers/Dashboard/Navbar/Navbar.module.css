@@ -1,0 +1,186 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 75%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.hamburgerIcon i {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.homeBtn {
+  margin-right: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.homeBtn:hover {
+  opacity: 0.8;
+}
+
+.myAccount {
+  position: relative;
+}
+
+.myAccountBtn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--primary);
+  transition: all 0.25s ease;
+}
+
+.myAccountBtn i {
+  margin-left: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.myAccountBtn.mobileIcon i {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.myAccountBtn:hover {
+  background-color: #f0f0f0;
+}
+
+.myAccountBtn.mobileIcon:hover {
+  background-color: transparent;
+}
+
+.myAccountList {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.myAccountList li {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+.myAccountList li a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.myAccountList li:hover {
+  background-color: #f0f0f0;
+}
+
+.myAccountList li:last-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.myAccountList li i {
+  margin-right: 0.75rem;
+}
+
+.myAccountList.shown {
+  animation: listShown 0.5s forwards ease;
+}
+
+@keyframes listShown {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+}
+
+.myAccountList.hidden {
+  animation: listHidden 0.5s forwards ease;
+}
+
+@keyframes listHidden {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-2rem);
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .Navbar {
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .logo {
+    height: 60%;
+  }
+
+  .myAccountList {
+    top: 100%;
+  }
+
+  .myAccountList li {
+    font-size: 1.2rem;
+  }
+}

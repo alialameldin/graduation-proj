@@ -1,0 +1,10 @@
+.AboutUsSection {
+  margin-bottom: 3rem;
+  z-index: 100;
+}
+
+.body {
+  font-size: 1.3rem;
+  color: var(--primary-text);
+  z-index: 100;
+}

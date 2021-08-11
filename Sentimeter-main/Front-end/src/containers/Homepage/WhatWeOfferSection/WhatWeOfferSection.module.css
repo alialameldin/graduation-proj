@@ -1,0 +1,107 @@
+.WhatWeOfferSection {
+  padding: 10rem 0;
+  z-index: 10;
+  position: relative;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+}
+
+.dash {
+  width: 5rem;
+  height: 0.5rem;
+  background-color: var(--secondary);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionIcon {
+  width: 5rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader {
+  align-self: center;
+  color: var(--primary);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.sectionBody {
+  text-align: justify;
+  color: var(--primary-text);
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.circles {
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.singleCircles1 {
+  top: 70%;
+  left: 5%;
+  width: 8%;
+  opacity: 0.6;
+  transform: rotateZ(-10deg);
+}
+
+.doubleCircles1 {
+  top: 10%;
+  left: 80%;
+  width: 10%;
+}
+
+@media (max-width: 767px) {
+  .WhatWeOfferSection {
+    padding: 4rem 0;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .circles {
+    display: none;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    row-gap: 4rem;
+  }
+
+  .sectionIcon {
+    margin-bottom: 1.5rem;
+  }
+}

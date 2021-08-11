@@ -1,0 +1,27 @@
+.MobileNavItem {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.MobileNavItem a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.MobileNavItem .iconText {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.MobileNavItem.active .iconText {
+  background-color: var(--primary-hover);
+}
+
+.MobileNavItem:last-child {
+  border-bottom: none;
+}
+
+.MobileNavItem i {
+  margin-right: 1rem;
+}

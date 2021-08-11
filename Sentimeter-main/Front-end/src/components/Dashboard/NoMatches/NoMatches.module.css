@@ -1,0 +1,24 @@
+.NoMatches {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NoMatches p {
+  font-size: 1.4rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.NoMatches img {
+  margin-top: 3rem;
+  height: 12rem;
+}
+
+@media (max-width: 767px) {
+  .NoMatches p {
+    text-align: center;
+  }
+}

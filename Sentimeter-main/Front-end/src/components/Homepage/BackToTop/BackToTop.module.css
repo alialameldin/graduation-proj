@@ -1,0 +1,79 @@
+.BackToTop {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 110;
+}
+
+.BackToTop.show {
+  animation: fadeIn 0.5s forwards ease;
+}
+
+.BackToTop.hide {
+  animation: fadeOut 0.5s forwards ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.BackToTop.mobile:hover {
+  padding: 0;
+  width: 3.5rem;
+}
+
+.BackToTop:hover {
+  padding: 0 2rem;
+  width: 12rem;
+}
+
+.BackToTop p {
+  transform: translateY(-5%);
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.BackToTop > p {
+  font-size: 1.5rem;
+}
+
+.BackToTop .cnmText {
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}

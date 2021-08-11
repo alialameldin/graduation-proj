@@ -1,0 +1,49 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.formGroup:last-of-type {
+  margin-bottom: 0;
+}
+
+.formGroup label {
+  margin-bottom: 0.5rem;
+  color: var(--primary-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.formGroup.noPH label {
+  margin-bottom: 0;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--primary-text);
+  transition: all 0.25s ease;
+}
+
+.formGroup input.empty {
+  border-color: var(--alert);
+}
+
+.formGroup input::placeholder {
+  opacity: 0.6;
+}
+
+.formGroup input.empty::placeholder {
+  color: var(--alert);
+}
+
+.formGroup input:focus,
+.formGroup input:active {
+  border-color: var(--secondary);
+}

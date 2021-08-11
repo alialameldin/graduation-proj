@@ -1,0 +1,49 @@
+.Notification {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  width: 100%;
+  padding: 1rem 0;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 16fr 1fr;
+  background-color: #000;
+  padding-left: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Notification p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.Notification .icon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Notification.alert {
+  background-color: var(--alert);
+}
+
+.Notification.success {
+  background-color: var(--success);
+}
+
+.Notification span {
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+@media (max-width: 767px) {
+  .Notification {
+    top: -20%;
+  }
+}

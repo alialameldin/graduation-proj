@@ -1,0 +1,43 @@
+.QACard {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.QACard:last-child {
+  margin-bottom: 0;
+}
+
+.question {
+  padding: 2rem;
+  padding-bottom: 1.5rem;
+  background-color: #fafafa;
+  color: #444;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.question i {
+  font-size: 1.2rem;
+}
+
+.answerParent {
+  overflow: hidden;
+}
+
+.answer {
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  /* padding-top: 1.5rem; */
+}
+
+/* .answerParent {
+  padding: 2rem;
+} */

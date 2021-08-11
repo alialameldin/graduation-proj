@@ -1,0 +1,411 @@
+.modelWrapper {
+  position: fixed;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model {
+  width: 90%;
+  height: 90%;
+  background-color: var(--main-bg);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1rem 2rem;
+}
+
+.header {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formGroup .status {
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.status.readyStatus {
+  color: var(--success);
+}
+
+.status.trainingStatus {
+  color: rgb(233, 195, 70);
+}
+
+.status.notTrainedStatus {
+  color: var(--alert);
+}
+
+.name {
+  display: flex;
+  align-items: baseline;
+  color: var(--primary);
+}
+
+.name h1 {
+  font-size: 2.2rem;
+}
+
+.name .dot {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.name .username {
+  font-size: 1.2rem;
+  transform: translateY(-0.25rem);
+}
+
+.name .username a {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: all 0.25s ease;
+}
+
+.name .username a:hover {
+  opacity: 0.8;
+}
+
+.xIcon {
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.xIcon:hover {
+  opacity: 0.8;
+}
+
+.body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+  margin-top: 2rem;
+}
+
+.leftSide {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding-right: 2rem;
+}
+
+.rightSide {
+  padding-left: 2rem;
+}
+
+.formGroup {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  column-gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.formGroup.isOwner {
+  grid-template-columns: 4fr 12fr 2fr;
+}
+
+.formGroup.notToBeAligned {
+  align-items: flex-start;
+}
+
+.formGroup:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.formGroup p,
+.rightFormGroup h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  text-transform: uppercase;
+}
+
+.formGroup input,
+.formGroup textarea {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  color: var(--primary);
+  outline: none;
+  background-color: var(--main-bg);
+  color: var(--secondary-disabled);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.formGroup textarea {
+  padding: 0.35rem 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  resize: none;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu";
+}
+
+.formGroup input.invalid,
+.formGroup textarea.invalid {
+  border-color: var(--alert);
+}
+
+.formGroup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /* object-fit: contain; */
+}
+
+.formGroup .editDiv {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  height: fit-content;
+  padding: 0.25rem 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.formGroup .editDiv.saveDiv {
+  background-color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.formGroup .editDiv:hover {
+  opacity: 0.8;
+}
+
+.formGroup .editDiv p {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.formGroup .editDiv i {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.formGroup .imageBtns > div {
+  margin-bottom: 0.5rem;
+}
+
+.formGroup .imageBtns > div:last-child {
+  margin-bottom: 0;
+}
+
+.formGroup .imageBtns .removeDiv {
+  background-color: var(--alert);
+  border-color: var(--alert);
+}
+
+.rightFormGroup {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rightFormGroup:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.rightFormGroup .dash {
+  margin: 0.5rem 0 1rem 0;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: var(--secondary);
+}
+
+.keyValuePair {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  column-gap: 1rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.keyValuePair .value {
+  color: var(--secondary);
+}
+
+.archPaper {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.archPaper:hover {
+  opacity: 0.8;
+}
+
+.btnsContainer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnsContainer > button,
+.apiBtn {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--alert);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.btnsContainer > button i {
+  margin-right: 0.25rem;
+}
+
+.apiBtn {
+  background-color: var(--secondary);
+  border-color: var(--secondary-disabled);
+  text-decoration: none;
+}
+
+.apiBtn:hover {
+  opacity: 0.9;
+}
+
+.btnsContainer .deleteBtn {
+  color: var(--alert);
+}
+
+.btnsContainer .deleteBtn:hover {
+  background-color: var(--alert);
+  color: #fff;
+}
+
+.downloadAndAPIBtns {
+  display: flex;
+  align-items: center;
+}
+
+.downloadBtn {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed var(--secondary);
+  color: var(--secondary);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.downloadBtn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-bottom: 1rem;
+  }
+
+  .name h1 {
+    font-size: 1.7rem;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formGroup > * {
+    margin-bottom: 1rem;
+  }
+
+  .formGroup > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .formGroup .groupName,
+  .rightFormGroup .groupName {
+    font-size: 1.2rem;
+  }
+
+  .formGroup .editDiv {
+    width: fit-content;
+    padding: 0.25rem 1.5rem;
+  }
+
+  .btnsContainer > button {
+    padding: 0.5rem;
+  }
+
+  .formGroup:last-of-type {
+    padding-bottom: 1.5rem;
+  }
+
+  .rightSide {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+    padding-left: 0;
+  }
+
+  .btnsContainer {
+    flex-direction: column-reverse;
+  }
+
+  .deleteBtn {
+    width: 100%;
+  }
+
+  .apiBtn {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+
+  .downloadBtn {
+    font-size: 1.1rem;
+  }
+
+  .downloadAndAPIBtns {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}

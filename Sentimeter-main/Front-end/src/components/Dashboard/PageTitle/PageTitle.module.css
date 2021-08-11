@@ -1,0 +1,6 @@
+.title {
+  color: var(--primary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}

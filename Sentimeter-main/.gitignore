@@ -1,0 +1,5 @@
+Front-end/node_modules
+Back-end/node_modules
+Back-end/id_rsa_priv.pem
+Back-end/.env
+*.h5

@@ -1,0 +1,112 @@
+.DeleteModel {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg);
+  z-index: 1002;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.body {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.body h3 {
+  color: var(--primary-text);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--alert);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: 0.5rem;
+}
+
+.inputContainer input {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border: 1.5px solid var(--primary);
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  transition: all 0.25s ease;
+}
+
+.inputContainer input:active,
+.inputContainer input:focus {
+  border-color: var(--primary-text);
+}
+
+.inputContainer input.alertInput {
+  border-color: var(--alert);
+  color: var(--alert);
+}
+
+.error {
+  margin-top: 0.75rem;
+  color: var(--alert);
+}
+
+.btnsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btnsContainer > button {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.35s ease;
+}
+
+.btnsContainer > button:hover {
+  opacity: 0.9;
+}
+
+.deleteBtn {
+  background-color: var(--alert);
+}
+
+.cancelBtn {
+  margin-left: 2rem;
+  background-color: var(--primary);
+}
+
+@media (max-width: 767px) {
+  .DeleteModel {
+    top: 0;
+    left: 0;
+  }
+}

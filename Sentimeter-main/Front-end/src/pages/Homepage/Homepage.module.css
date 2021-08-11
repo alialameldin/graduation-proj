@@ -1,0 +1,6 @@
+.Homepage {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--main-bg);
+  position: relative;
+}

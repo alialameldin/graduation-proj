@@ -1,0 +1,101 @@
+.MSASection {
+  padding: 10rem 0;
+  width: 100%;
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.sectionImage {
+  width: 85%;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.textContainer {
+  width: 100%;
+}
+
+.textBody {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.65rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid var(--secondary);
+  background-color: transparent;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.singleCircles1 {
+  position: absolute;
+  right: 15%;
+  top: 10%;
+  transform: rotateZ(30deg);
+  width: 8rem;
+  opacity: 0.3;
+}
+
+.doubleCircles1 {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  transform: scaleX(1);
+  width: 12rem;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .MSASection {
+    padding: 4rem 0;
+  }
+
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 3rem;
+  }
+
+  .sectionImage {
+    width: 100%;
+    grid-row: 2;
+  }
+
+  .singleCircles1,
+  .doubleCircles1 {
+    display: none;
+  }
+}

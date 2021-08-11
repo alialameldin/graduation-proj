@@ -1,0 +1,64 @@
+.Overview {
+  width: 100%;
+}
+
+.body {
+  width: 100%;
+  display: grid;
+  grid:
+    "welcome welcome"
+    "myModels models";
+  gap: 1rem;
+}
+
+.bg {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+}
+
+.welcomeBack {
+  grid-area: welcome;
+}
+
+.welcomeBack h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.welcomeBack p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.myModels {
+  grid-area: myModels;
+}
+
+.models {
+  grid-area: models;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
+  width: fit-content;
+  padding-bottom: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .body {
+    grid:
+      "welcome"
+      "myModels"
+      "models";
+  }
+}

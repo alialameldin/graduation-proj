@@ -1,0 +1,15 @@
+.TeamMembers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.75rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  .TeamMembers {
+    grid-template-columns: 1fr;
+  }
+}

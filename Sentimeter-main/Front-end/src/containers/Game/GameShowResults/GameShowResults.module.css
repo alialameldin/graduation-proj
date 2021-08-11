@@ -1,0 +1,86 @@
+.icon {
+  font-size: 5rem;
+  color: #555;
+}
+
+.xp {
+  background-color: var(--secondary);
+  font-size: 1.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  width: fit-content;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.oops,
+.hurray {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.oops span {
+  color: var(--alert);
+  font-weight: 600;
+}
+.hurray span {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.btn {
+  padding: 0.75rem 0;
+  width: 12rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.25s ease;
+  margin-top: 3rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn i {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .GameShowResults {
+    width: 90%;
+    height: 70%;
+    padding: 1rem;
+  }
+  .xp p {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: 1.2rem;
+  }
+  .oops,
+  .hurray {
+    text-align: center;
+  }
+  .oops span,
+  .hurray span {
+    display: block;
+  }
+}

@@ -1,0 +1,22 @@
+.sectionName {
+  color: var(--primary-text);
+}
+
+.dash {
+  width: 4rem;
+  margin-bottom: 1.5rem;
+  height: 0.25rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary);
+}
+
+.dash.center {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .sectionName {
+    font-size: 1.8rem;
+  }
+}

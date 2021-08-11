@@ -1,0 +1,18 @@
+.SecondaryPageHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 2.5rem;
+  color: var(--primary-text);
+  margin-bottom: 0.75rem;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+.dash {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: var(--secondary);
+}

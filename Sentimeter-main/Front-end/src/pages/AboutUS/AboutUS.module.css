@@ -1,0 +1,26 @@
+.AboutUS {
+  background-color: var(--main-bg);
+  padding-top: 8rem;
+  position: relative;
+}
+
+.body {
+  margin: 0 auto;
+  width: 70%;
+  z-index: 100;
+}
+
+.singleCircles1 {
+  position: absolute;
+  z-index: 1;
+  opacity: 100%;
+  top: 20rem;
+  left: 0;
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .body {
+    width: 90%;
+  }
+}

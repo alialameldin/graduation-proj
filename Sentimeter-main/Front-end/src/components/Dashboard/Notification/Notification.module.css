@@ -1,0 +1,36 @@
+.Notification {
+  position: fixed;
+  right: 3%;
+  bottom: 8%;
+  display: flex;
+  width: 25rem;
+  background-color: #fff;
+  color: var(--primary);
+  padding: 1rem;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid var(--primary);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.Notification p {
+  width: 92%;
+  line-height: 1.5rem;
+}
+
+.Notification i {
+  font-size: 1.2rem;
+  color: var(--primary);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.Notification i:hover {
+  color: var(--secondary);
+}

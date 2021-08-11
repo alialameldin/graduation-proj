@@ -1,0 +1,34 @@
+.WhiteContainer {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid var(--secondary);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5rem;
+  width: 40%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.WhiteContainer.center {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.WhiteContainer.center .container {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .WhiteContainer {
+    width: 90%;
+    padding: 3rem 2rem;
+  }
+}

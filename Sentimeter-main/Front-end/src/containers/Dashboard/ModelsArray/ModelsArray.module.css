@@ -1,0 +1,14 @@
+.ModelsArray {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .ModelsArray {
+    grid-template-columns: 1fr;
+  }
+}

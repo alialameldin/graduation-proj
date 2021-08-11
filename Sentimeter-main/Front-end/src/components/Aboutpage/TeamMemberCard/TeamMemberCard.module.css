@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+.TeamMemberCard {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 2rem;
+  padding-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  z-index: 100;
+}
+
+.TeamMemberCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--primary);
+}
+
+.dash {
+  width: 4rem;
+  margin-bottom: 1rem;
+  height: 0.2rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary);
+}
+
+.name {
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.section h3 {
+  color: var(--primary-text);
+  font-size: 1.2rem;
+}
+
+.responsibilities {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  list-style: none;
+  min-height: 15rem;
+}
+
+.responsibilities li {
+  margin-left: 1.5rem;
+  text-decoration-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.responsibilities li:last-child {
+  margin-bottom: 0;
+}
+
+.responsibilities li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--secondary); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1rem; /* Also needed for space (tweak if needed) */
+  margin-left: -1rem; /* Also needed for space (tweak if needed) */
+}
+
+.qouteContainer {
+  width: 100%;
+}
+
+.qoute {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 500;
+  color: #777;
+  font-family: "Kalam", cursive;
+  line-height: 1.5rem;
+}

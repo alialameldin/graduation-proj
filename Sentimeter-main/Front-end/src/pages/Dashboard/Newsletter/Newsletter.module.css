@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+.body {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 35rem;
+}
+
+.text {
+  font-size: 2rem;
+  /* font-family: "Courgette", cursive; */
+  /* font-family: "Itim", cursive; */
+  font-family: "Kalam", cursive;
+  font-weight: 600;
+  color: var(--secondary);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.text2 {
+  font-size: 1.2rem;
+  color: var(--primary-text);
+  margin-top: 1rem;
+}
+
+.body img {
+  width: 50%;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  width: 30%;
+  padding: 0.65rem 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid var(--secondary);
+  outline: none;
+  background-color: var(--secondary);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.submitBtn:hover {
+  opacity: 0.9;
+}
+
+.submitBtn.subscribed {
+  background-color: transparent;
+  color: var(--secondary);
+}
+
+.submitBtn.subscribed:hover {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .newsImg {
+    display: none;
+  }
+
+  .submitBtn {
+    width: 50%;
+  }
+}
